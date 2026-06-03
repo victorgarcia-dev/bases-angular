@@ -1,0 +1,12 @@
+ <ol>
+        @for (character of characters(); track character.id) {
+           @if(character.power > 500){
+             <li>
+                <span>{{character.name}}: </span>
+                <strong [ngClass]="character.power > 9000 ? 'text-danger' : 'text-primary'">{{character.power}}</strong>
+            </li>
+           } @else {
+            <li><strong>Aqui no hay nadie</strong></li>
+           }
+        }
+ </ol>
