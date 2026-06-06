@@ -18,7 +18,6 @@ export class DragonballCharacterAdd {
       }
 
       const newCharacter:Character = {
-        //id: this.characters().length + 1,
         id:Math.floor(Math.random()*1000),
         name: this.name(),
         power: this.power() 
